@@ -7,7 +7,7 @@ subtitle:
 <div id="pieChart"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
-<script src="../d3pie.min.js"></script>
+<script src="../js/d3pie.min.js"></script>
 <script>
 var pie = new d3pie("pieChart", {
 	"header": {
