@@ -6,6 +6,7 @@ subtitle:
 
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="d3pie.min.js"></script>
 <script>
 var pie = new d3pie("pieChart", {
 	"header": {
