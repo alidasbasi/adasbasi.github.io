@@ -1,3 +1,9 @@
+---
+layout: page
+title: Drebin Veriseti
+subtitle: 
+---
+
 <div id="pieChart"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
