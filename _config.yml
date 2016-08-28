@@ -25,6 +25,8 @@ description: Blog Sayfası
 navbar-links:
   Hakkımda: "aboutme"
   Yayın / Proje: "publications"
+  Analiz:
+    - Drebin Veriseti: "drebin"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
