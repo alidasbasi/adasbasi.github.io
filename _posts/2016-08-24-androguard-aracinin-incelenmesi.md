@@ -17,7 +17,7 @@ anlayabilmek bakımından kolaylık sağlayacaktır.
 androlyze.py dosyasını komut satırından(Linux, MAC işletim sistemleri için) çalıştırabilmek için;
 
 ```bash
-	$ ./androlyze.py -s
+$ ./androlyze.py -s
 ```
 komutu çalıştırılır. Komut ile python interaktif shell ekranı açılacaktır. Analize uygulama dosyasını okumakla başlanılır.
 
@@ -49,9 +49,8 @@ androidversion değeri uygulama hazırlanırken kullanılan Android sürüm numa
 
 filename() yöntemi analizi yapılan uygulamanın adını vermektedir.
 
-~~~
-$ a.show()
 
+	$ a.show()
 	FILES: 
 	META-INF/MANIFEST.MF Unknown 3e6eaf8d
 	META-INF/ALIAS_NA.SF Unknown -2dc737d3
@@ -70,6 +69,7 @@ $ a.show()
 	resources.arsc Unknown -61619347
 	classes.dex Unknown -2b13e650
 
+~~~
 DECLARED PERMISSIONS:
 
 REQUESTED PERMISSIONS:
