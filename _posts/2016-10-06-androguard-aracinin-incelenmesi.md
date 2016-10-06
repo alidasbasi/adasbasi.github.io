@@ -64,7 +64,7 @@ Android uygulamaının ismine erişmek için filename değeri ile elde edebiliri
 	In [6]: a.filename
 	Out[6]: '/Users/ali/Desktop/f2305198a4789bc0f74afb7627bf998c0329b4.apk'
 
-show() yöntemi ise APK dosyasının decompile sonucu göstemektedir. `FILES` bölümü `classes.dex` ve medya dosyalarını, `DECLARED ve REQUESTED PERMISSIONS` tanımlanan ve gerekli izinleri, ve sırasına göre ana aktiviteyi, bütün aktiviteleri, uygulamanın arka planda çalışan servislerini, ve alıcıları göstermektedir.
+show() yöntemi ise APK dosyasının decompile sonucu göstemektedir. `FILES` bölümü `classes.dex` ve medya dosyalarını, `DECLARED ve REQUESTED PERMISSIONS` tanımlanan ve gerekli izinleri, ve sırasına göre ana aktiviteyi, bütün aktiviteleri, uygulamanın arka planda çalışan servislerini ve alıcıları göstermektedir.
 
 ```bash
 	In [6]: a.show()
