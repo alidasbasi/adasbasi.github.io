@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android Uygulamasının Androguard Analiz Aracı Kullanılarak Tersine Mühendislik Yöntemi ile İncelenmesi
+title: Androguard Analiz Aracının İncelenmesi
 tags: [android, androguard, reverse engineering, apk, analiz ]
 ---
 
