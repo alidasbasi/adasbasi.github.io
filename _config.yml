@@ -17,7 +17,7 @@ baseurl: ""
 title: Ali DAŞBAŞI
 
 # Short description of your site
-description: Blog Sayfası
+description: Kişisel Web ve Blog Sayfası
 
 # --- Navigation bar options --- #
 
@@ -26,7 +26,7 @@ navbar-links:
   Hakkımda: "aboutme"
   Yayın / Proje: "publications"
   Analiz:
-    - Drebin Veriseti: "drebin"
+#    - Drebin Veriseti: "drebin"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
@@ -35,7 +35,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/ali.jpeg"
 
 # --- Footer options --- #
 
@@ -149,6 +149,6 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-  
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
