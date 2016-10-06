@@ -17,11 +17,11 @@ anlayabilmek bakımından kolaylık sağlayacaktır.
 androlyze.py dosyasını komut satırından(Linux, MAC işletim sistemleri için) çalıştırabilmek için;
 
 ```bash
-$ ./androlyze.py -s
+	$ ./androlyze.py -s
 ```
 komutu çalıştırılır. Komut ile python interaktif shell ekranı açılacaktır. Analize uygulama dosyasını okumakla başlanılır.
 
-
+```bash
 	$ a, d, dx = AnalyzeAPK("dosya_adi.apk")
 	$a
 	<androguard.core.bytecodes.apk.APK at 0x10d94bcd0>
@@ -29,7 +29,7 @@ komutu çalıştırılır. Komut ile python interaktif shell ekranı açılacakt
 	<androguard.core.bytecodes.dvm.DalvikVMFormat at 0x10d95f390>
 	$dx
 	<androguard.core.analysis.analysis.uVMAnalysis at 0x10d98abd0>
-
+```
 
 AnalyzeAPK fonksiyonu sonucu elimizde 3 ayrı değişken oluşmuştur. a değişkeni APK dosyası hakkında genel
 bilgileri toplamak için kullanacağımız değişkendir. a değişkenine ilişkin yöntemlerden bir kaçı aşağıda açıklanmıştır.
@@ -49,7 +49,7 @@ androidversion değeri uygulama hazırlanırken kullanılan Android sürüm numa
 
 filename() yöntemi analizi yapılan uygulamanın adını vermektedir.
 
-
+```bash
 	$ a.show()
 	FILES: 
 	META-INF/MANIFEST.MF Unknown 3e6eaf8d
@@ -68,6 +68,7 @@ filename() yöntemi analizi yapılan uygulamanın adını vermektedir.
 	AndroidManifest.xml Unknown 40ebbf8d
 	resources.arsc Unknown -61619347
 	classes.dex Unknown -2b13e650
+```
 
 ~~~
 DECLARED PERMISSIONS:
