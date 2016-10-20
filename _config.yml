@@ -1,5 +1,7 @@
 # --- General options --- #
 
+gems: [jekyll-paginate]
+
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
