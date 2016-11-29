@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Emulatore APK Dosyası Kurulumunun Yapılması
+title: Emulatore APK Dosyası Kurulumu
 tags: [android, apk, emulator, mac ]
 ---
 

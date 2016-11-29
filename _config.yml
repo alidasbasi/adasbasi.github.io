@@ -19,15 +19,16 @@ baseurl: ""
 title: Ali DAŞBAŞI
 
 # Short description of your site
-description: Kişisel Web ve Blog Sayfası
+description: Kişisel Web Sayfam
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   Hakkımda: "aboutme"
-  Yayın / Proje: "publications"
-  Analiz:
+  Android: "android"
+#  Yayın / Proje: "publications" # ileri bir zamanda
+#  Analiz:
 #    - Drebin Veriseti: "drebin"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
