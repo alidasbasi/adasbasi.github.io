@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Androguard Analiz Aracının İncelenmesi
+title: Androguard Analiz Aracı
 tags: [android, androguard, reverse engineering, apk, analiz ]
 ---
 
