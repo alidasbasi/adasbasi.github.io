@@ -27,6 +27,7 @@ description: Kişisel Web Sayfam
 navbar-links:
   Hakkımda: "aboutme"
   Android: "android"
+  Folyo: "http://alidasbasi.com/folyo/"
 #  Yayın / Proje: "publications" # ileri bir zamanda
 #  Analiz:
 #    - Drebin Veriseti: "drebin"
