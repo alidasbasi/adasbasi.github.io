@@ -8,6 +8,8 @@ subtitle: Android Karalama Defteri
 - Android Instant Messaging Application: <https://github.com/Pirngruber/AndroidIM/>
 - Control Clementine from your Android device "Clementine": <https://github.com/clementine-player/Android-Remote>
 
+---
+
 # Güvenlik
 
 ## Statik Analiz Tabanlı Kötücül Yazılım Tespit Çalışmaları
@@ -28,3 +30,11 @@ subtitle: Android Karalama Defteri
 14. [Detecting mobile malware threats to homeland security through static analysis.](http://fulltext.study/preview/pdf/457263.pdf)
 
 ## Dinamik Analiz Tabanlı Kötücül Yazılım Tespit Çalışmaları
+
+---
+
+# Verisetleri
+
+- The Drebin Dataset: <https://www.sec.cs.tu-bs.de/~danarp/drebin/>
+- Android Malware Genome Project: <http://www.malgenomeproject.org/>
+- contagio (blog): <http://contagiominidump.blogspot.com.tr/>
