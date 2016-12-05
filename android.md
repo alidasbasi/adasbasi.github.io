@@ -43,4 +43,8 @@ subtitle: Android Karalama Defteri
 
 # Diğer
 
+- Android related examples: <https://github.com/hmkcode/Android>
 - A collection of android security related resources: <https://github.com/ashishb/android-security-awesome>
+- A curated list of awesome Android Tools: <https://github.com/wasabeef/awesome-android-tools>
+- A curated list of awesome Android UI/UX libraries: <https://github.com/wasabeef/awesome-android-ui>
+- A curated list of awesome Android packages and resources: <https://github.com/JStumpp/awesome-android>
