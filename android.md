@@ -38,3 +38,9 @@ subtitle: Android Karalama Defteri
 - The Drebin Dataset: <https://www.sec.cs.tu-bs.de/~danarp/drebin/>
 - Android Malware Genome Project: <http://www.malgenomeproject.org/>
 - contagio (blog): <http://contagiominidump.blogspot.com.tr/>
+
+---
+
+# Diğer
+
+- A collection of android security related resources: <https://github.com/ashishb/android-security-awesome>
