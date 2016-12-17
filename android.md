@@ -48,3 +48,4 @@ subtitle: Android Karalama Defteri
 - A curated list of awesome Android Tools: <https://github.com/wasabeef/awesome-android-tools>
 - A curated list of awesome Android UI/UX libraries: <https://github.com/wasabeef/awesome-android-ui>
 - A curated list of awesome Android packages and resources: <https://github.com/JStumpp/awesome-android>
+- A curated list of awesome android things tutorials, libraries and much more at one place: <https://github.com/19test/awesome-android-things>
