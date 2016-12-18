@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Android Çalışma Sayfası
-subtitle: Android Karalama Defteri
+title: Android Karalama Defteri
+subtitle: 
 ---
 
 # Uygulama
 - Android Instant Messaging Application: <https://github.com/Pirngruber/AndroidIM/>
 - Control Clementine from your Android device "Clementine": <https://github.com/clementine-player/Android-Remote>
+- App to control your android device from another Android device or a PC over the internet connection: <https://github.com/omerjerk/RemoteDroid>
 
 ---
 
@@ -49,3 +50,4 @@ subtitle: Android Karalama Defteri
 - A curated list of awesome Android UI/UX libraries: <https://github.com/wasabeef/awesome-android-ui>
 - A curated list of awesome Android packages and resources: <https://github.com/JStumpp/awesome-android>
 - A curated list of awesome android things tutorials, libraries and much more at one place: <https://github.com/amitshekhariitbhu/awesome-android-things>
+- Android libs from github or other websites: <https://github.com/snowdream/awesome-android>
