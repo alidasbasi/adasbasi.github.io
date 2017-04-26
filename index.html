@@ -9,23 +9,39 @@ subtitle: Kişisel Web Sayfam
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
-	
+
 	  {% if post.subtitle %}
 	  <h3 class="post-subtitle">
 	    {{ post.subtitle }}
 	  </h3>
-	  {% endif %}  
+	  {% endif %}
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+        {% assign m = post.date | date: "%-m" %}
+        {{ post.date | date: "%-d" }}
+        {% case m %}
+          {% when '1' %}Ocak
+          {% when '2' %}Şubat
+          {% when '3' %}Mart
+          {% when '4' %}Nisan
+          {% when '5' %}Mayıs
+          {% when '6' %}Haziran
+          {% when '7' %}Temmuz
+          {% when '8' %}Ağustos
+          {% when '9' %}Eylül
+          {% when '10' %}Ekim
+          {% when '11' %}Kasım
+          {% when '12' %}Aralık
+        {% endcase %}
+      {{ post.date | date: "%Y" }}
     </p>
-  
+
     <div class="post-entry">
       {{ post.content | truncatewords: 20| strip_html | xml_escape}}
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Devamını&nbsp;Oku]</a>
     </div>
-  
+
    </article>
   {% endfor %}
 </div>
