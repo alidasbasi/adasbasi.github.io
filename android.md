@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Android Karalama Defteri
+title: Karalama Defterim
 subtitle: 
 ---
+
+Android ile ilgili araç-gereç, ıvır-zıvır pek çok önemli bilgileri içermektedir.
 
 # Uygulama
 - Android Instant Messaging Application: <https://github.com/Pirngruber/AndroidIM/>
@@ -44,7 +46,6 @@ subtitle:
 
 # Diğer
 
-- Android related examples: <https://github.com/hmkcode/Android>
 - A collection of android security related resources: <https://github.com/ashishb/android-security-awesome>
 - A curated list of awesome Android Tools: <https://github.com/wasabeef/awesome-android-tools>
 - A curated list of awesome Android UI/UX libraries: <https://github.com/wasabeef/awesome-android-ui>
