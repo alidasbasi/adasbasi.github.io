@@ -82,6 +82,16 @@ google_analytics: "UA-33297379-1"
 # Output options (more information on Jekyll's site)
 timezone: "America/Vancouver"
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
+  auto_ids:       false
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  footnote_nr:    1
+  show_warnings:  false
+  linenos: true
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 10

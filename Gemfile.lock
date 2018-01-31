@@ -21,6 +21,7 @@ GEM
     ffi (1.9.14)
     forwardable-extended (2.6.0)
     gemoji (2.1.0)
+    github-markdown-jekyll (0.7.0)
     github-pages (97)
       activesupport (= 4.2.7)
       github-pages-health-check (= 1.2.0)
@@ -139,8 +140,9 @@ PLATFORMS
 
 DEPENDENCIES
   execjs
+  github-markdown-jekyll (~> 0.7.0)
   github-pages
   therubyracer
 
 BUNDLED WITH
-   1.13.6
+   1.16.1
