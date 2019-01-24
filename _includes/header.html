@@ -1,112 +1,26 @@
-<!-- TODO this file has become a mess, refactor it -->
+{% if page.title == "Home"
+   or page.title == "Blog"
+   or page.title == "Projects"
+   or page.title == "Tags"
+%}{% assign showHeader = true %}{% endif %}
 
-{% if page.bigimg or page.title %}
+{% if showHeader == true %}
+    <header class="header-home {% if site.animation %}animated{% endif %}">
+        {% if site.about %}
+            <a class="link" href="{{ site.url }}/about">
+                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+            </a>
+        {% else %}
+            <span class="link">
+                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+            </span>
+        {% endif %}
 
-{% if page.bigimg %}
-  <div id="header-big-imgs" data-num-img={% if page.bigimg.first %}{{ page.bigimg.size }}{% else %}1{% endif %}
-    {% for bigimg in page.bigimg %}
-	  {% assign imgnum = forloop.index %}
-	  {% for imginfo in bigimg %}
-	    {% if imginfo[0] %}
-		  data-img-src-{{ imgnum }}="{{ imginfo[0] | prepend: site.baseurl | replace: '//', '/' }}"
-		  data-img-desc-{{ imgnum }}="{{ imginfo[1] }}"
-		{% else %}
-		  data-img-src-{{ imgnum }}="{{ imginfo | prepend: site.baseurl | replace: '//', '/' }}"
-		{% endif %}
-	  {% endfor %}
-    {% endfor %}
-  ></div>
+        <h1 class="title">{{ site.name }}</h1>
+        <h2 class="description">{{ site.bio }}</h2>
+
+        {% include social-links.html %}
+    </header>
 {% endif %}
 
-<header class="header-section {% if page.bigimg %}has-img{% endif %}">
-{% if page.bigimg %}
-<div class="big-img intro-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="{{ include.type }}-heading">
-          <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
-		  {% if page.subtitle %}
-		    {% if include.type == "page" %}
-            <hr class="small">
-            <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
-			{% else %}
-			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
-			{% endif %}
-		  {% endif %}
-
-		  {% if include.type == "post" %}
-		  <span class="post-meta">
-        {% assign m = page.date | date: "%-m" %}
-        {{ page.date | date: "%-d" }}
-        {% case m %}
-          {% when '1' %}Ocak
-          {% when '2' %}Şubat
-          {% when '3' %}Mart
-          {% when '4' %}Nisan
-          {% when '5' %}Mayıs
-          {% when '6' %}Haziran
-          {% when '7' %}Temmuz
-          {% when '8' %}Ağustos
-          {% when '9' %}Eylül
-          {% when '10' %}Ekim
-          {% when '11' %}Kasım
-          {% when '12' %}Aralık
-        {% endcase %}
-        {{ page.date | date: "%Y" }}
-      </span>
-		  {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
-  <span class='img-desc'></span>
-</div>
-{% endif %}
-<div class="intro-header no-img">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="{{ include.type }}-heading">
-          <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
-		  {% if page.subtitle %}
-		    {% if include.type == "page" %}
-            <hr class="small">
-            <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
-			{% else %}
-			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
-			{% endif %}
-		  {% endif %}
-
-		  {% if include.type == "post" %}
-		  <span class="post-meta">
-      {% assign m = page.date | date: "%-m" %}
-      {{ page.date | date: "%-d" }}
-      {% case m %}
-        {% when '1' %}Ocak
-        {% when '2' %}Şubat
-        {% when '3' %}Mart
-        {% when '4' %}Nisan
-        {% when '5' %}Mayıs
-        {% when '6' %}Haziran
-        {% when '7' %}Temmuz
-        {% when '8' %}Ağustos
-        {% when '9' %}Eylül
-        {% when '10' %}Ekim
-        {% when '11' %}Kasım
-        {% when '12' %}Aralık
-      {% endcase %}
-      {{ page.date | date: "%Y" }}
-      </span>
-		  {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</header>
-
-
-{% else %}
-<div class="intro-header"></div>
-{% endif %}
+{% include nav.html %}

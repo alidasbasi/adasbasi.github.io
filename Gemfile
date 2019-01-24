@@ -1,6 +1,6 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gem 'execjs'
-gem 'therubyracer'
 gem 'github-pages'
-gem 'github-markdown-jekyll', '~> 0.7.0'
+gem 'html-proofer'
+gem 'jekyll-admin'
+gem 'jekyll-multiple-languages-plugin'

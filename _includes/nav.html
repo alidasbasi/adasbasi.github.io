@@ -1,47 +1,49 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      {% for link in site.navbar-links %}
-        {% if link[1].first %}
-          <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
-            <div class="navlinks-children">
-              {% for childlink in link[1] %}
-                {% for linkparts in childlink %}
-                  {% include navbarlink.html link=linkparts %}
-                {% endfor %}
-              {% endfor %}
-            </div>
-          </li>
-        {% else %}
-          <li>
-            {% include navbarlink.html link=link %}
-          </li>
+<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
+    <ul class="list">
+        {% if page.title != "Home" %}
+            <li class="item">
+                <a class="link" href="{{ site.url }}/{% if site.lang == "en" %}{{ site.lang }}/{% endif %}">{% translate home %}</a>
+            </li>
         {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
 
-	{% if site.avatar and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ site.url }} ">
-	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
-		</a>
-	  </div>
-	</div>
-	{% endif %}
+        {% if site.blog == true %}
+            {% if page.title != "Blog" %}   
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/{% if site.lang == "en" %}{{ site.lang }}/{% endif %}blog">{% translate blog %}</a>
+                </li>
+            {% endif %}
+        {% endif %}
 
-  </div>
+        {% if site.projects == true %}
+            {% if page.title != "Projects" %}
+                <li class="item">
+                  <a class="link" href="{{ site.url }}/{% if site.lang == "en" %}{{ site.lang }}/{% endif %}projects">{% translate projects %}</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.about == true %}
+            {% if page.title != "About" %}
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/{% if site.lang == "en" %}{{ site.lang }}/{% endif %}about">{% translate about %}</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.resume == true %}
+            <li class="item">
+                <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">{% translate resume %}</a>
+            </li>
+        {% endif %}
+
+        {% if site.lang == "tr" %}
+            <li class="item">
+                <a class="link" href="{{ site.url }}/en" >{% translate language %}</a>
+            </li>
+        {% elsif site.lang == "en" %}
+            <li class="item">
+                <a class="link" href="{{ site.url }}/" >{% translate language %}</a>
+            </li>
+        {% endif %}
+    </ul>
 </nav>

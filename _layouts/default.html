@@ -1,33 +1,52 @@
 ---
-common-css:
-  - "/css/bootstrap.min.css"
-  - "/css/main.css"
-common-ext-css:
-  - "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-common-googlefonts:
-  - "Lora:400,700,400italic,700italic"
-  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-common-js:
-  - "/js/jquery-1.11.2.min.js"
-  - "/js/bootstrap.min.js"
-  - "/js/main.js"
-  - "/js/d3pie.min.js"
+layout: compress
 ---
-
 <!DOCTYPE html>
 <html lang="en">
+<head>
 
-  {% include head.html %}
+    {% if site.analytics-google %}
+        {% include analytics-google.html %}
+    {% endif %}
 
-  <body>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name=viewport content="width=device-width, initial-scale=1">
 
-    {% include nav.html %}
+    <meta name=description content="{{ site.bio }}">
+    <meta name=author content="{{ site.name }}">
 
-    {{ content }}
+    {% seo %}
+    
+    {% include favicon.html %}
 
-    {% include footer.html %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
 
-    {% include footer-scripts.html %}
+    <style>
+    {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
+    {{ scss_sheet | scssify }}
+    </style>
 
-  </body>
+</head>
+<body>
+
+    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+        {% if page.tag %}
+            <div class="post">
+        {% else %}
+            {% if showHeader != true %}
+                <div class="page {{ page.title | downcase }}">
+            {% else %}
+                <div class="{{ page.title | downcase }}">
+            {% endif %}
+        {% endif %}
+
+            {{ content }}
+        </div>
+    </div>
+
+    {% include icons.html %}
+
+</body>
 </html>
