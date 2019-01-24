@@ -1,0 +1,49 @@
+<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
+    <ul class="list">
+        {% if page.title != "Home" %}
+            <li class="item">
+                <a class="link" href="{{ site.url }}/{% if site.lang == "en" %}{{ site.lang }}/{% endif %}">{% translate home %}</a>
+            </li>
+        {% endif %}
+
+        {% if site.blog == true %}
+            {% if page.title != "Blog" %}   
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/{% if site.lang == "en" %}{{ site.lang }}/{% endif %}blog">{% translate blog %}</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.projects == true %}
+            {% if page.title != "Projects" %}
+                <li class="item">
+                  <a class="link" href="{{ site.url }}/{% if site.lang == "en" %}{{ site.lang }}/{% endif %}projects">{% translate projects %}</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.about == true %}
+            {% if page.title != "About" %}
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/{% if site.lang == "en" %}{{ site.lang }}/{% endif %}about">{% translate about %}</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.resume == true %}
+            <li class="item">
+                <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">{% translate resume %}</a>
+            </li>
+        {% endif %}
+
+        {% if site.lang == "tr" %}
+            <li class="item">
+                <a class="link" href="{{ site.url }}/en" >{% translate language %}</a>
+            </li>
+        {% elsif site.lang == "en" %}
+            <li class="item">
+                <a class="link" href="{{ site.url }}/" >{% translate language %}</a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
