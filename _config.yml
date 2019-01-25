@@ -107,5 +107,3 @@ jekyll-mentions:
     base_url: https://github.com/adasbasi
 
 languages: ["tr", "en"]
-
-exclude_from_localizations: ["assets", "blog"]
