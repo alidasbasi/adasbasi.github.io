@@ -3,7 +3,7 @@ name: Ali Daşbaşı
 bio: ...
 
 # twitter summary info
-description: Kişisel blog sayfam
+description: Kişisel sayfam
 
 # if it's an external image, update below for true
 # better with square images
@@ -30,7 +30,7 @@ analytics-google: 'UA-33297379-1'
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
-  shortname: mydisqus # enter this from your disqus account
+  shortname: alidasbasi # enter this from your disqus account
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
